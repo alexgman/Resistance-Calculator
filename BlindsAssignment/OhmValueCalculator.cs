@@ -2,6 +2,9 @@
 
 namespace ResistorEngine
 {
+    /// <summary>
+    /// Calculates the resistance of a specified set of bands.
+    /// </summary>
     internal class OhmValueCalculator : IOhmValueCalculator
     {
         private readonly IBandA _bandA;

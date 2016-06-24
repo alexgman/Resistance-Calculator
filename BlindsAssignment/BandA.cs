@@ -1,5 +1,8 @@
 ﻿namespace ResistorEngine
 {
+    /// <summary>
+    /// Represents the color of the first figure of component value band.
+    /// </summary>
     internal class BandA : Band, IBandA
     {
         private const int _bandLocation = 1;

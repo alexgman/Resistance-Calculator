@@ -1,5 +1,8 @@
 ﻿namespace ResistorEngine
 {
+    /// <summary>
+    /// This represents the fourth band, which is the tolerance; however, the functionality around it does not yet exist. 
+    /// </summary>
     internal class Tolerance : Band, ITolerance
     {
         private const int _bandLocation = 4;

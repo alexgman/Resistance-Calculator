@@ -1,5 +1,8 @@
 ﻿namespace ResistorEngine
 {
+    /// <summary>
+    /// Represents the third band which is the multiplier.
+    /// </summary>
     internal class Multiplier : Band, IMultiplier
     {
         private const int _bandLocation = 3;

@@ -2,6 +2,9 @@ using System.Collections.Generic;
 
 namespace ResistorEngine
 {
+    /// <summary>
+    /// Represents the available colors for each type of band.
+    /// </summary>
     public static class ColorBands
     {
         public static Dictionary<ResistorColors, int> Sigfig = new Dictionary<ResistorColors, int>()
