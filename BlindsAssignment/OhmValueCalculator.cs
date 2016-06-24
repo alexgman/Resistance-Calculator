@@ -19,7 +19,6 @@ namespace ResistorEngine
             _multiplier = multiplier;
             _tolerance = tolerance;
         }
-        
 
         public bool AreInputsValid(string bandAColor, string bandBColor, string bandCColor, string bandDColor)
         {
@@ -67,7 +66,7 @@ namespace ResistorEngine
             var sigfig2 = _bandB.GetValue();
             var multiplier = _multiplier.GetValue();
 
-            var ohms = (sigfig1 * 10 + sigfig2) * Math.Pow (10 , multiplier);
+            var ohms = (sigfig1 * 10 + sigfig2) * Math.Pow(10, multiplier);
 
             return Convert.ToInt32(ohms);
         }

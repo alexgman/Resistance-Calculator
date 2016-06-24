@@ -1,10 +1,8 @@
-﻿using System;
+﻿using ResistorEngine;
+using ResistorUI.Models;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
-using ResistorUI.Models;
-using ResistorEngine;
 
 namespace ResistorUI.Controllers
 {

@@ -1,7 +1,7 @@
 ﻿namespace ResistorEngine
 {
     /// <summary>
-    /// This represents the fourth band, which is the tolerance; however, the functionality around it does not yet exist. 
+    /// This represents the fourth band, which is the tolerance; however, the functionality around it does not yet exist.
     /// </summary>
     internal class Tolerance : Band, ITolerance
     {

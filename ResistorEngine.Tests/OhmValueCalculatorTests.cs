@@ -1,6 +1,6 @@
-﻿using NUnit.Framework;
-using ResistorEngine;
-using Moq;
+﻿using Moq;
+using NUnit.Framework;
+
 namespace ResistorEngine.Tests
 {
     [TestFixture]
@@ -20,6 +20,7 @@ namespace ResistorEngine.Tests
             _mockMultiplier = new Mock<IMultiplier>();
             _mockTolerance = new Mock<ITolerance>();
         }
+
         [Test, Combinatorial]
         public void AreInputsValid_Returns_False_When_Parameters_Are_NullOrEmpty(
             [Values(null, "")] string bandAColor,
@@ -27,7 +28,7 @@ namespace ResistorEngine.Tests
             [Values(null, "")] string bandCColor)
         {
             //Arrange
-            var sut = new OhmValueCalculator(_mockBandA.Object,_mockBandB.Object,_mockMultiplier.Object,_mockTolerance.Object);
+            var sut = new OhmValueCalculator(_mockBandA.Object, _mockBandB.Object, _mockMultiplier.Object, _mockTolerance.Object);
             //Act
             //Assert
             Assert.That(sut.AreInputsValid(bandAColor, bandBColor, bandCColor, "Tolerance").Equals(false));
@@ -70,6 +71,7 @@ namespace ResistorEngine.Tests
             //Assert
             Assert.That(sut.CalculateOhmValue(_colorPlaceHolder, _colorPlaceHolder, _colorPlaceHolder, _colorPlaceHolder).Equals(0));
         }
+
         [Test]
         public void When_MultiplierColor_Not_Valid_Return_0()
         {
@@ -99,12 +101,11 @@ namespace ResistorEngine.Tests
 
             //Act
             sut.CalculateOhmValue(_colorPlaceHolder, _colorPlaceHolder, _colorPlaceHolder, _colorPlaceHolder);
-            
+
             //Assert
             _mockBandA.Verify(x => x.GetValue(), Times.Once());
             _mockBandB.Verify(x => x.GetValue(), Times.Once());
             _mockMultiplier.Verify(x => x.GetValue(), Times.Once());
         }
-
     }
 }

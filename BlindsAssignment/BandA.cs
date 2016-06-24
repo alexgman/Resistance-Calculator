@@ -6,10 +6,12 @@
     internal class BandA : Band, IBandA
     {
         private const int _bandLocation = 1;
+
         public BandA()
         {
             BandPosition = _bandLocation;
         }
+
         public int GetValue()
         {
             return ColorBands.Sigfig[Color];
