@@ -1,0 +1,91 @@
+﻿@model ResistorUI.Models.Resistor
+@{
+    var selectListBandAB = (IEnumerable<SelectListItem>)ViewData["BandAB"];
+    var selectListBandC = (IEnumerable<SelectListItem>)ViewData["BandC"];
+    var selectListBandD = (IEnumerable<SelectListItem>)ViewData["BandD"];
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>OhmValueCalculator</h4>
+        <hr />
+        <div class="form-group">
+            <div class="row" id="bandA">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <div class="col-md-2">
+                        @Html.LabelFor(m => m.BandAColor)
+                    </div>
+                    <div class="col-md-2">
+                        @Html.DropDownListFor(m => m.BandAColor, selectListBandAB)
+                    </div>
+                    <div class="col-md-8"></div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row" id="bandB">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <div class="col-md-2">
+                        @Html.LabelFor(m => m.BandBColor)
+                    </div>
+                    <div class="col-md-2">
+                        @Html.DropDownListFor(m => m.BandBColor, selectListBandAB)
+                    </div>
+                    <div class="col-md-8"></div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row" id="bandC">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <div class="col-md-2">
+                        @Html.LabelFor(m => m.BandCColor)
+                    </div>
+                    <div class="col-md-2">
+                        @Html.DropDownListFor(m => m.BandCColor, selectListBandC)
+                    </div>
+                    <div class="col-md-8"></div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row" id="bandD">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <div class="col-md-2">
+                        @Html.LabelFor(m => m.BandDColor)
+                    </div>
+                    <div class="col-md-2">
+                        @Html.DropDownListFor(m => m.BandDColor, selectListBandD)
+                    </div>
+                    <div class="col-md-8"></div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row" id="value">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <div class="col-md-2">
+                        @Html.LabelFor(m => m.Value)
+                    </div>
+                    <div class="col-md-2">
+                        @Html.DisplayTextFor(m => m.Value)
+                    </div>
+                    <div class="col-md-8"></div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

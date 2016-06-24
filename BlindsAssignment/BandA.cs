@@ -5,7 +5,7 @@
         private const int _bandLocation = 1;
         public BandA()
         {
-            BandLocation = _bandLocation;
+            BandPosition = _bandLocation;
         }
         public int GetValue()
         {
@@ -14,7 +14,7 @@
 
         public override bool IsValidColor()
         {
-            if (base.ColorIsDefined() && ColorBands.Sigfig.ContainsKey(Color))
+            if (base.IsColorDefined() && ColorBands.Sigfig.ContainsKey(Color))
             {
                 return true;
             }

@@ -11,12 +11,12 @@
 
         public Tolerance()
         {
-            BandLocation = _bandLocation;
+            BandPosition = _bandLocation;
         }
 
         public override bool IsValidColor()
         {
-            return base.ColorIsDefined() && ColorBands.Tolerance.ContainsKey(Color);
+            return base.IsColorDefined() && ColorBands.Tolerance.ContainsKey(Color);
         }
     }
 }

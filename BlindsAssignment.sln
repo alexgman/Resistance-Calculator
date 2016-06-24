@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResistorEngine", "BlindsAss
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResistorEngine.Tests", "ResistorEngine.Tests\ResistorEngine.Tests.csproj", "{D62236ED-5702-432B-AEB1-97A88C9D28EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI", "UI\UI.csproj", "{13437F27-9F3E-473C-A039-D54DE8AABD3A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResistorUI", "ResistorUI\ResistorUI.csproj", "{0A91CE59-313B-44E4-BBF9-050791F75010}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{D62236ED-5702-432B-AEB1-97A88C9D28EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D62236ED-5702-432B-AEB1-97A88C9D28EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D62236ED-5702-432B-AEB1-97A88C9D28EA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{13437F27-9F3E-473C-A039-D54DE8AABD3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{13437F27-9F3E-473C-A039-D54DE8AABD3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{13437F27-9F3E-473C-A039-D54DE8AABD3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{13437F27-9F3E-473C-A039-D54DE8AABD3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A91CE59-313B-44E4-BBF9-050791F75010}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A91CE59-313B-44E4-BBF9-050791F75010}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A91CE59-313B-44E4-BBF9-050791F75010}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A91CE59-313B-44E4-BBF9-050791F75010}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

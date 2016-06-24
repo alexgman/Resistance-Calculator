@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="BandA.cs" />
     <Compile Include="BandB.cs" />
+    <Compile Include="ColorBands.cs" />
     <Compile Include="ColorMapper.cs" />
     <Compile Include="IBand.cs" />
     <Compile Include="IBandA.cs" />

@@ -11,12 +11,12 @@
 
         public Multiplier()
         {
-            BandLocation = _bandLocation;
+            BandPosition = _bandLocation;
         }
 
         public override bool IsValidColor()
         {
-            if (base.ColorIsDefined() && ColorBands.Multiplier.ContainsKey(Color))
+            if (base.IsColorDefined() && ColorBands.Multiplier.ContainsKey(Color))
             {
                 return true;
             }

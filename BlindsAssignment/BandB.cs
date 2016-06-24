@@ -5,7 +5,7 @@ namespace ResistorEngine
         private const int _bandLocation = 2;
         public BandB()
         {
-            BandLocation = _bandLocation;
+            BandPosition = _bandLocation;
         }
         public int GetValue()
         {
@@ -14,7 +14,7 @@ namespace ResistorEngine
 
         public override bool IsValidColor()
         {
-            if (base.ColorIsDefined() && ColorBands.Sigfig.ContainsKey(Color))
+            if (base.IsColorDefined() && ColorBands.Sigfig.ContainsKey(Color))
             {
                 return true;
             }
